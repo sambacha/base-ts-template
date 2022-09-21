@@ -1,0 +1,54 @@
+{
+  "name": "base-ts-template",
+  "private": true,
+  "version": "0.0.0",
+  "description": "wireit boilerplate",
+  "type": "module",
+  "scripts": {
+    "build": "wireit",
+    "dev": "wireit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sambacha/base-ts-template.git"
+  },
+  "keywords": [],
+  "author": "SEE CONTRIBUTORS",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/sambacha/base-ts-template/issues"
+  },
+  "homepage": "https://github.com/sambacha/base-ts-template#readme",
+  "devDependencies": {
+    "tsup": "^6.2.3",
+    "typescript": "^4.7.4",
+    "wireit": "^0.7.1"
+  },
+  "wireit": {
+    "dev": {
+      "command": "vite",
+      "files": [
+        "src/**/*.{ts,tsx,svg,css}",
+        "tsconfig.json",
+        "vite.config.ts"
+      ],
+      "packageLocks": [
+        "package-lock.json"
+      ]
+    },
+    "build": {
+      "command": "tsc && vite build",
+      "files": [
+        "src/**/*.{ts,tsx,svg,css}",
+        "tsconfig.json",
+        "vite.config.ts"
+      ],
+      "output": [
+        "dist/**"
+      ],
+      "packageLocks": [
+        "package-lock.json"
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+# -*- mode: gitignore; -*-
+*.html
+*.css
+*.svg
+*.xml
+*.scss
+*.min.js
+.cache/
+build/
+dist/
+*.json
+*/snapshot/**
+
